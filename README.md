@@ -6,7 +6,7 @@ Fork this repo.
 
 Clone the repo and push up your changes and share link.
 
-Using an automation framework of your choice.
+Using an automation framework of your choice. Preferably leveraging Cucumber.
 
 Create a branch and name it with your "{firstname_lastname}_evisort_challenge"
 Make sure to update your README to show how to run your scripts
