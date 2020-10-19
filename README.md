@@ -21,3 +21,13 @@ Feature: Automate
 Scenario: Add a user and validate the user has been added to the table
 
 Scenario: Delete user User Name: novak and validate user has been deleted
+
+Run Scripts:
+ Step 1: npm install
+ 
+ Step 2: npm webdriver-update
+ 
+ Step 3: npm run build
+ 
+ Step 4: npm test
+

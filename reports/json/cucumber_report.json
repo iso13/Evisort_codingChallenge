@@ -1,0 +1,262 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Validate User Data for Angular Web table",
+    "line": 1,
+    "id": "validate-user-data-for-angular-web-table",
+    "tags": [],
+    "uri": "features\\dashboard.feature",
+    "elements": [
+      {
+        "id": "validate-user-data-for-angular-web-table;add-a-user-and-validate-the-user-has-been-added-to-the-table",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Add a user and validate the user has been added to the table",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Open AngularJS web page \"way2AutomationUrl\"",
+            "match": {
+              "location": "typeScript\\stepdefinitions\\commonsteps.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4123000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "user should see \"btnAddUser\" in \"DashBoard\" page",
+            "match": {
+              "location": "typeScript\\stepdefinitions\\commonsteps.js:91"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 90000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "user clicks on \"btnAddUser\" in \"DashBoard\" page",
+            "match": {
+              "location": "typeScript\\stepdefinitions\\commonsteps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 227000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "FirstName",
+                      "LastName",
+                      "UserName",
+                      "Password",
+                      "Customer",
+                      "Role",
+                      "Email",
+                      "CellPhone"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "keerthy",
+                      "Bandi",
+                      "kbandi",
+                      "password",
+                      "1",
+                      "Sales Team",
+                      "test@gmail.com",
+                      "9999999999"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 9,
+            "name": "Enter Personal Information in Form Fields",
+            "match": {
+              "location": "typeScript\\stepdefinitions\\commonsteps.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2219000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "user clicks on \"btnSave\" in \"DashBoard\" page",
+            "match": {
+              "location": "typeScript\\stepdefinitions\\commonsteps.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 158000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "FirstName",
+                      "UserName",
+                      "Email"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "keerthy",
+                      "kbandi",
+                      "test@gmail.com"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "User Details Should be added to the Table",
+            "match": {
+              "location": "typeScript\\stepdefinitions\\commonsteps.js:95"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 143000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "validate-user-data-for-angular-web-table;delete-user-user-name:-novak-and-validate-user-has-been-deleted",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Delete user User Name: novak and validate user has been deleted",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "Open AngularJS web page \"way2AutomationUrl\"",
+            "match": {
+              "location": "typeScript\\stepdefinitions\\commonsteps.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 549000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "user should see \"btnAddUser\" in \"DashBoard\" page",
+            "match": {
+              "location": "typeScript\\stepdefinitions\\commonsteps.js:91"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 85000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "UserName"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "novak"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 19,
+            "name": "User able to delete",
+            "match": {
+              "location": "typeScript\\stepdefinitions\\commonsteps.js:119"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 527000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "UserName"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "novak"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "User should be deleted",
+            "match": {
+              "location": "typeScript\\stepdefinitions\\commonsteps.js:133"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5015000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
